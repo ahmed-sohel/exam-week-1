@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+<title>Calculator</title>
+<style>
+  body{font-family: Roboto,sans-serif;}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 offset-lg-3 offset-md-3">
+        <form>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-3 col-form-label text-right">Operation</label>
+            <div class="col-sm-9">
+              <select name="operation" id="operation" class="form-control">
+                <option selected disabled>Select operation</option>
+                <option value="add">Add</option>
+                <option value="subtract">Subtract</option>
+                <option value="multiply">Multiply</option>
+                <option value="divide">Divide</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="number1" class="col-sm-3 col-form-label text-right">Number 1</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="number1" placeholder="10">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="number2" class="col-sm-3 col-form-label text-right">Number 2</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="number2" placeholder="20">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="result" class="col-sm-3 col-form-label text-right">Result</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="result" readonly>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="calculateBtn" class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9">
+              <button type="button" id="calculateBtn" class="btn btn-primary">Calculate</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="dist/js/custom.js"></script>
+</body>
+</html>
